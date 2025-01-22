@@ -1,0 +1,1 @@
+export const Moods=['Happy😄', 'Calm😊', 'Grateful🥰', 'Optimistic😀', 'Sad😞', 'Angry😡', 'Anxious😟', 'Bored🥱']
