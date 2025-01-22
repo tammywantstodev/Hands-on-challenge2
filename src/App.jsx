@@ -13,12 +13,16 @@ function App() {
         };
         setMoods([...moods, newMood]);
     }
+    const handleRemove=(id)=> {
+       setMoods(moods.filter((mood) => mood.id !== id))
+    }
   return (
     <>
       <div>
           <h1>Mood Tracker</h1>
+
 <AddMood onAddMood={handleAddMood}/>
-          <DisplayMoods moods={moods} />
+          <DisplayMoods moods={moods} handleRemove={handleRemove}/>
       </div>
     </>
   )
